@@ -1,0 +1,40 @@
+.stack-timeline {
+    padding-right: 50px;
+}
+.stack-timeline > .vertical-timeline-element * {
+    color: #3a3434;
+}
+.stack-timeline > .vertical-timeline-element > .vertical-timeline-element-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+}
+.stack-timeline > .hover-event > .vertical-timeline-element-content {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.stack-timeline > .hover-event > .vertical-timeline-element-content:hover {
+    background-color: rgb(255, 235, 211);
+}
+.stack-timeline > .vertical-timeline-element > .vertical-timeline-element-content * {
+    margin: 0;
+    padding: 0;
+}
+.vertical-timeline-element-content:after { content: none; }
+.vertical-timeline-element--year > .vertical-timeline-element-content {
+    display: flex;
+    padding: 0;
+}
+.vertical-timeline-element--year > .vertical-timeline-element-content > .vertical-timeline-element-date {
+    font-size: 30px;
+    padding: 0;
+    opacity: 1;
+    color: #EE7B50;
+}
+
+@media screen and (max-width: 540px) {
+    .stack-timeline {
+        padding-right: 30px;
+    }
+}
