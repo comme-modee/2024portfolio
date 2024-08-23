@@ -7,8 +7,10 @@ const Header = ({ isMobile, fullpageController }) => {
   const header = useRef(null)
 
   useEffect(()=>{
-    header.current.style.opacity = 1
-  },[])
+    setTimeout(() => {
+      header.current.style.opacity = 1;
+    }, 500);
+  },[fullpageController])
 
   const handleClick = (section) => {
     if (fullpageController) {

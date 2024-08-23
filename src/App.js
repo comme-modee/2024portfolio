@@ -77,7 +77,7 @@ const handleFullpageApi = (fullpageApi) => {
           licenseKey = {'gplv3-license'}
           scrollingSpeed = {800} /* Options here */
           onLeave={handleLeave}
-          navigation={true}
+          navigation={!isMobile && true}
           // anchors={fullPageAnchors}
           normalScrollElements='.stack-timeline' //일부 요소를 스크롤 가능하게 함. 단, 섹션 자체에 적용하면 안됨.
           // touchSensitivity = {10} //터치민감도

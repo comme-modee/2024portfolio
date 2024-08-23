@@ -251,7 +251,7 @@ body {
         gap: 10px;
     }
     .stack .stack-container > .line {
-        width: 100%;
+        width: 94%;
         height: 2px;
     }
     .stack .stack-container > .stacks {
@@ -313,17 +313,55 @@ body {
         font-size: 28px;
         padding-left: 10px;
     }
+    .stack .stack-container > .stacks {
+        gap: 14px;
+    }
     .stack .stack-container > .stacks p {
         font-size: 16px;
     }
     .stack-timeline-container {
-        padding: 80px 0px 20px 0px;
+        padding: 60px 0px 40px 0px;
     }
     .stack-timeline-container .title {
         font-size: 50px;
         line-height: 54px;
     }
+    .badge-container {
+        gap: 6px;
+    }
+    .project-detail-popup {
+        gap: 14px;
+    }
+    .project-detail-popup > .project-title {
+        font-size: 20px;
+    }
+    .project-detail-popup > .project-title > a > svg {
+        font-size: 16px;
+    }
+    .project-detail-popup > .description {
+        font-size: 14px;
+    }
+    .project-detail-popup > .stacks {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .project-detail-popup > .stacks > span {
+        border-radius: 6px;
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+    .project-detail-popup > .img > .pc-img {
+        width: 100%;
+        height: auto;
+    }
+    .project-detail-popup > .img > .mobile-img {
+        width: 50%;
+    }
+    .contact .contact-container {
+        gap: 24px;
+    }
     .contact .contact-container > .right > div {
         font-size: 14px;
+        padding-bottom: 10px;
     }
 }
