@@ -84,6 +84,27 @@ const StackTimeline = ({ projectDetailPopup, openProjectDetail }) => {
                 쇼핑몰 사이트 작업 및 배포. (FE: React / BE: Node.js)
             </p>
             </VerticalTimelineElement>
+            {/* <VerticalTimelineElement
+            className='hover-event'
+            date="5월"
+            iconStyle={{ overflow: 'hidden' }}
+            icon={<img src='./img/stacks/be/NodeJS.svg' width={'100%'} alt="myLogo" />}
+            onTimelineElementClick={() => 
+                openProjectDetail({ 
+                    title: '할일 앱', 
+                    description: '할일 앱 with 로그인. (FE: React / BE: Node.js)', 
+                    PCImg: './img/project/todolist-with-login.png', 
+                    mobileImg: './img/project/todolist-with-login-m.png', 
+                    stacks: ['Node.js', 'Express', 'MongoDB', 'Mongoose'],
+                    url: 'https://comme-study-todo.netlify.app'
+                })}
+            >
+            <h3 className="vertical-timeline-element-title">Node.js, Express, MongoDB, Mongoose</h3>
+            <h4 className="vertical-timeline-element-subtitle">배포: AWS, Netlify</h4>
+            <p>
+                할일 앱 with 로그인. (FE: React / BE: Node.js)
+            </p>
+            </VerticalTimelineElement> */}
             <VerticalTimelineElement
             date="4월"
             iconStyle={{ overflow: 'hidden' }}
@@ -97,21 +118,11 @@ const StackTimeline = ({ projectDetailPopup, openProjectDetail }) => {
             <VerticalTimelineElement
             date="4월"
             iconStyle={{ overflow: 'hidden' }}
-            icon={<img src='./img/stacks/fe/ReactQuery.png' width={'100%'} alt="myLogo" />}
+            icon={<img src='./img/stacks/fe/React.svg' width={'100%'} alt="myLogo" />}
             >
             <h3 className="vertical-timeline-element-title">React, React Query, React-dnd, xlsx-js-style</h3>
             <p>
                 모니터링 사이트 VCATCH 작업<br/>(Hyper 라이브러리(React ver) / 반응형 테이블 작업 / Chart component로 각종 차트 데이터 연결 / React-dnd / xlsx-js-style로 보고서 엑셀 출력 기능 구현)
-            </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-            date="3월"
-            iconStyle={{ overflow: 'hidden' }}
-            icon={<img src='./img/stacks/fe/React.svg' width={'100%'} alt="myLogo" />}
-            >
-            <h3 className="vertical-timeline-element-title">React 입문</h3>
-            <p>
-                React 강의 수강. 넷플릭스 사이트 구현.
             </p>
             </VerticalTimelineElement>
 
@@ -159,17 +170,46 @@ const StackTimeline = ({ projectDetailPopup, openProjectDetail }) => {
             >
             <h3 className="vertical-timeline-element-title">Html5, Css3, Javascript, GSAP</h3>
             <p>
-                고돌이 랜딩페이지 작업.
+                고돌이 랜딩페이지 작업
             </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-            date="9월"
+            className='hover-event'
+            date="8월"
             iconStyle={{ overflow: 'hidden' }}
             icon={<img src='./img/stacks/fe/Javascript.svg' width={'100%'} alt="myLogo" />}
+            onTimelineElementClick={() => 
+                openProjectDetail({ 
+                    title: '숫자맞추기 게임', 
+                    PCImg: './img/project/numbergame.png', 
+                    mobileImg: './img/project/numbergame-m.png', 
+                    stacks: ['Html5', 'Css3', 'Javascript'],
+                    url: 'https://guess-the-number-modee.netlify.app'
+                })}
             >
             <h3 className="vertical-timeline-element-title">Html5, Css3, Javascript</h3>
             <p>
-                할일 앱(날씨 api 사용) / 숫자맞추기 게임 구현.
+                숫자맞추기 게임
+            </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+            className='hover-event'
+            date="7월"
+            iconStyle={{ overflow: 'hidden' }}
+            icon={<img src='./img/stacks/fe/Javascript.svg' width={'100%'} alt="myLogo" />}
+            onTimelineElementClick={() => 
+                openProjectDetail({ 
+                    title: '할일 앱', 
+                    description: '할일 앱(날씨 api 사용)', 
+                    PCImg: './img/project/todolist.png', 
+                    mobileImg: './img/project/todolist-m.png', 
+                    stacks: ['Html5', 'Css3', 'Javascript'],
+                    url: 'https://modee-todolist.netlify.app'
+                })}
+            >
+            <h3 className="vertical-timeline-element-title">Html5, Css3, Javascript</h3>
+            <p>
+                할일 앱(날씨 api 사용)
             </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
