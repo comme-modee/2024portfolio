@@ -25,6 +25,8 @@ function App() {
     url: ''
   }
   const [ projectData, setProjectData ] = useState(projectInitialData)
+  const fullpageApiRef = useRef(null);
+  const [isFullpageApiRefReady, setIsFullpageApiRefReady] = useState(false)
   
   window.addEventListener('resize', () => setVh())
 
@@ -51,13 +53,16 @@ const closeProjectDetailPopup = () => {
   }, 300);
 }
 
-useEffect(() => {
-  console.log(projectData)
-},[projectData])
+const handleFullpageApi = (fullpageApi) => {
+  fullpageApiRef.current = fullpageApi;
+  setTimeout(() => {
+    setIsFullpageApiRefReady(true)
+  }, 1000);
+}
 
   return (
     <React.Fragment>
-      {/* <Header/> */}
+      {isFullpageApiRefReady && <Header fullpageController={fullpageApiRef.current}/>}
       <ReactFullpage
           //fullpage options
           licenseKey = {'gplv3-license'}
@@ -68,6 +73,8 @@ useEffect(() => {
           normalScrollElements='.stack-timeline' //일부 요소를 스크롤 가능하게 함. 단, 섹션 자체에 적용하면 안됨.
           // touchSensitivity = {10} //터치민감도
           render={({ state, fullpageApi }) => {
+            handleFullpageApi(fullpageApi);
+            console.log('1')
             return (
               <ReactFullpage.Wrapper>
                 <div className="section intro">
