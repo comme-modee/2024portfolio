@@ -27,8 +27,17 @@ function App() {
   const [ projectData, setProjectData ] = useState(projectInitialData)
   const fullpageApiRef = useRef(null);
   const [isFullpageApiRefReady, setIsFullpageApiRefReady] = useState(false)
+  const [ isMobile, setIsMobile ] = useState(window.innerWidth <= 540);
+
   
-  window.addEventListener('resize', () => setVh())
+  window.addEventListener('resize', () => {
+    setVh()
+    if(window.innerWidth <= 480) {
+      setIsMobile(true)
+    } else {
+      setIsMobile(false)
+    }
+  })
 
   useEffect(() => {
     console.log('Made with fullPage.js');
@@ -62,7 +71,7 @@ const handleFullpageApi = (fullpageApi) => {
 
   return (
     <React.Fragment>
-      {isFullpageApiRefReady && <Header fullpageController={fullpageApiRef.current}/>}
+      {isFullpageApiRefReady && <Header isMobile={isMobile} fullpageController={fullpageApiRef.current}/>}
       <ReactFullpage
           //fullpage options
           licenseKey = {'gplv3-license'}
@@ -74,7 +83,6 @@ const handleFullpageApi = (fullpageApi) => {
           // touchSensitivity = {10} //터치민감도
           render={({ state, fullpageApi }) => {
             handleFullpageApi(fullpageApi);
-            console.log('1')
             return (
               <ReactFullpage.Wrapper>
                 <div className="section intro">

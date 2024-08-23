@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import './Header.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComment, faFolderOpen, faHome, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 
-const Header = ({ fullpageController }) => {
-
+const Header = ({ isMobile, fullpageController }) => {
   const header = useRef(null)
 
   useEffect(()=>{
@@ -15,12 +16,18 @@ const Header = ({ fullpageController }) => {
     }
   };
 
+  const headerMenu = [
+    { title: 'ABOUT ME', icon: faHome },
+    { title: 'SKILLS', icon: faScrewdriverWrench },
+    { title: 'EXPERIENCE', icon: faFolderOpen },
+    { title: 'CONTACT', icon: faComment }
+  ]
+
   return (
     <div className='header' ref={header}>
-        <div onClick={() => handleClick(1)}>ABOUT ME</div>
-        <div onClick={() => handleClick(2)}>SKILLS</div>
-        <div onClick={() => handleClick(3)}>EXPERIENCE</div>
-        <div onClick={() => handleClick(4)}>CONTACT</div>
+      {headerMenu.map((menu, index) => 
+        <div key={index} onClick={() => handleClick(index+1)}>{isMobile ? <FontAwesomeIcon icon={menu.icon}/> : menu.title}</div>
+      )}
     </div>
   );
 }
