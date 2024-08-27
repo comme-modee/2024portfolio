@@ -84,7 +84,7 @@ const StackTimeline = ({ projectDetailPopup, openProjectDetail }) => {
                 쇼핑몰 사이트 작업 및 배포. (FE: React / BE: Node.js)
             </p>
             </VerticalTimelineElement>
-            {/* <VerticalTimelineElement
+            <VerticalTimelineElement
             className='hover-event'
             date="5월"
             iconStyle={{ overflow: 'hidden' }}
@@ -92,7 +92,7 @@ const StackTimeline = ({ projectDetailPopup, openProjectDetail }) => {
             onTimelineElementClick={() => 
                 openProjectDetail({ 
                     title: '할일 앱', 
-                    description: '할일 앱 with 로그인. (FE: React / BE: Node.js)', 
+                    description: '할일 앱 (+)로그인/회원가입 (FE: React / BE: Node.js)', 
                     PCImg: './img/project/todolist-with-login.png', 
                     mobileImg: './img/project/todolist-with-login-m.png', 
                     stacks: ['Node.js', 'Express', 'MongoDB', 'Mongoose'],
@@ -100,11 +100,11 @@ const StackTimeline = ({ projectDetailPopup, openProjectDetail }) => {
                 })}
             >
             <h3 className="vertical-timeline-element-title">Node.js, Express, MongoDB, Mongoose</h3>
-            <h4 className="vertical-timeline-element-subtitle">배포: AWS, Netlify</h4>
+            <h4 className="vertical-timeline-element-subtitle">배포: Cloudtype, Netlify</h4>
             <p>
-                할일 앱 with 로그인. (FE: React / BE: Node.js)
+                할일 앱 (+)로그인/회원가입 (FE: React / BE: Node.js)
             </p>
-            </VerticalTimelineElement> */}
+            </VerticalTimelineElement>
             <VerticalTimelineElement
             date="4월"
             iconStyle={{ overflow: 'hidden' }}
