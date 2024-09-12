@@ -54,7 +54,7 @@ const StackTimeline = ({ projectDetailPopup, openProjectDetail }) => {
                     PCImg: './img/project/dev-ing.png', 
                     mobileImg: './img/project/dev-ing-m.png', 
                     stacks: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'React Redux', 'Socket.io'],
-                    url: 'https://dev-ing.netlify.app/'
+                    url: 'https://dev-ing-with-chat.netlify.app/'
                 })}
             >
             <h3 className="vertical-timeline-element-title">Node.js, Express, MongoDB, Mongoose, React Redux, Socket.io</h3>
