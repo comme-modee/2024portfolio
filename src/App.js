@@ -10,7 +10,7 @@ import { faLink, faXmark } from '@fortawesome/free-solid-svg-icons';
 import resume from '../src/asset/file/resume.pdf'
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons/faFileDownload';
 
-const fe = [ "React", "ReactQuery", "Redux", "JavaScript", "JQuery", "HTML", "CSS", "Bootstrap", "GSAP" ]
+const fe = [ "React", "ReactQuery", "Redux", "TypeScript", "JavaScript", "JQuery", "HTML", "CSS", "Bootstrap", "GSAP" ]
 const be = [ "NodeJS", "ExpressJS", "MongoDB", "Mongoose", "Socket.IO", "AWS" ]
 const tools = [ "VSCode", "Github", "Discord", "Figma", "Illustrator", "Photoshop" ]
 
