@@ -12,14 +12,19 @@ const StackTimeline = ({ projectDetailPopup, openProjectDetail }) => {
         >
             <VerticalTimelineElement
             contentStyle={{ background: '#ffebd3' }}
-            contentArrowStyle={{ borderRight: '7px solid #ffebd3' }}
+            iconStyle={{ display: 'none' }}
+            date="사용 기술 스택 / 사이트 링크 / 미리보기 이미지"
+            >
+            <h4 className="vertical-timeline-element-title">각 타임라인을 클릭하면 상세정보가 나타납니다</h4>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
             date="7월 15일 ~ "
             iconStyle={{ overflow: 'hidden' }}
             icon={<img src='./img/stacks/fe/React.svg' width={'100%'} alt="myLogo" />}
             >
             <h3 className="vertical-timeline-element-title">React Native</h3>
             <p>
-                React Native를 이용한 앱 작업 중.
+                React Native/TypeScript를 이용한 모바일앱 작업 진행 중.
             </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
